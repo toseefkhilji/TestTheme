@@ -3,11 +3,12 @@
 //  TestTheme
 //
 //  Created by Toseef Khilji on 19/03/20.
-//  Copyright © 2020 Rangam. All rights reserved.
+//  Copyright © 2020 Toseef. All rights reserved.
 //
 
 import UIKit
 
+@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?

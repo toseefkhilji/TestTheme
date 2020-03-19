@@ -13,6 +13,10 @@
 		214B584924233E9A00EC84D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214B584724233E9A00EC84D6 /* Main.storyboard */; };
 		214B584B24233EA600EC84D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214B584A24233EA600EC84D6 /* Assets.xcassets */; };
 		214B584E24233EA600EC84D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214B584C24233EA600EC84D6 /* LaunchScreen.storyboard */; };
+		214B58562423487300EC84D6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B58552423487300EC84D6 /* Theme.swift */; };
+		214B585A2423762500EC84D6 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B58592423762500EC84D6 /* UIColor.swift */; };
+		214B585C2423820200EC84D6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B585B2423820200EC84D6 /* ListViewController.swift */; };
+		216A610B242392F40035966A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216A610A242392F40035966A /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		214B584A24233EA600EC84D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		214B584D24233EA600EC84D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		214B584F24233EA600EC84D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		214B58552423487300EC84D6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		214B58592423762500EC84D6 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		214B585B2423820200EC84D6 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		216A610A242392F40035966A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				214B584124233E9A00EC84D6 /* AppDelegate.swift */,
 				214B584324233E9A00EC84D6 /* SceneDelegate.swift */,
 				214B584524233E9A00EC84D6 /* ViewController.swift */,
+				216A610A242392F40035966A /* SettingsViewController.swift */,
+				214B585B2423820200EC84D6 /* ListViewController.swift */,
+				214B58592423762500EC84D6 /* UIColor.swift */,
+				214B58552423487300EC84D6 /* Theme.swift */,
 				214B584724233E9A00EC84D6 /* Main.storyboard */,
 				214B584A24233EA600EC84D6 /* Assets.xcassets */,
 				214B584C24233EA600EC84D6 /* LaunchScreen.storyboard */,
@@ -95,7 +107,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = Rangam;
+				ORGANIZATIONNAME = Toseef;
 				TargetAttributes = {
 					214B583D24233E9A00EC84D6 = {
 						CreatedOnToolsVersion = 11.3;
@@ -139,8 +151,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				214B584624233E9A00EC84D6 /* ViewController.swift in Sources */,
+				216A610B242392F40035966A /* SettingsViewController.swift in Sources */,
+				214B585A2423762500EC84D6 /* UIColor.swift in Sources */,
+				214B58562423487300EC84D6 /* Theme.swift in Sources */,
 				214B584224233E9A00EC84D6 /* AppDelegate.swift in Sources */,
 				214B584424233E9A00EC84D6 /* SceneDelegate.swift in Sources */,
+				214B585C2423820200EC84D6 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,15 +300,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = BEV2Z98CJ8;
 				INFOPLIST_FILE = TestTheme/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rangam.TestTheme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = WildCard;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,15 +321,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = BEV2Z98CJ8;
 				INFOPLIST_FILE = TestTheme/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rangam.TestTheme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = WildCard;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
