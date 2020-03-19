@@ -17,6 +17,7 @@
 		214B585A2423762500EC84D6 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B58592423762500EC84D6 /* UIColor.swift */; };
 		214B585C2423820200EC84D6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B585B2423820200EC84D6 /* ListViewController.swift */; };
 		216A610B242392F40035966A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216A610A242392F40035966A /* SettingsViewController.swift */; };
+		216A611124239CF20035966A /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216A611024239CF20035966A /* Label.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		214B58592423762500EC84D6 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		214B585B2423820200EC84D6 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		216A610A242392F40035966A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		216A611024239CF20035966A /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,17 +68,34 @@
 			children = (
 				214B584124233E9A00EC84D6 /* AppDelegate.swift */,
 				214B584324233E9A00EC84D6 /* SceneDelegate.swift */,
-				214B584524233E9A00EC84D6 /* ViewController.swift */,
-				216A610A242392F40035966A /* SettingsViewController.swift */,
-				214B585B2423820200EC84D6 /* ListViewController.swift */,
-				214B58592423762500EC84D6 /* UIColor.swift */,
 				214B58552423487300EC84D6 /* Theme.swift */,
+				216A610C24239C640035966A /* Controllers */,
+				216A610F24239CF20035966A /* Classes */,
 				214B584724233E9A00EC84D6 /* Main.storyboard */,
 				214B584A24233EA600EC84D6 /* Assets.xcassets */,
 				214B584C24233EA600EC84D6 /* LaunchScreen.storyboard */,
 				214B584F24233EA600EC84D6 /* Info.plist */,
 			);
 			path = TestTheme;
+			sourceTree = "<group>";
+		};
+		216A610C24239C640035966A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				214B584524233E9A00EC84D6 /* ViewController.swift */,
+				214B585B2423820200EC84D6 /* ListViewController.swift */,
+				216A610A242392F40035966A /* SettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		216A610F24239CF20035966A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				214B58592423762500EC84D6 /* UIColor.swift */,
+				216A611024239CF20035966A /* Label.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +175,7 @@
 				214B58562423487300EC84D6 /* Theme.swift in Sources */,
 				214B584224233E9A00EC84D6 /* AppDelegate.swift in Sources */,
 				214B584424233E9A00EC84D6 /* SceneDelegate.swift in Sources */,
+				216A611124239CF20035966A /* Label.swift in Sources */,
 				214B585C2423820200EC84D6 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

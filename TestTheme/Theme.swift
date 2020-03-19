@@ -9,13 +9,7 @@
 import Foundation
 import UIKit
 
-/// Base Theme
-enum ThemeStyle {
-    case dark
-    case light
-    case custom([String:Any])
-}
-
+/// App theme Class
 struct AppTheme {
     static var current: AppTheme = AppTheme.light
 
@@ -112,13 +106,3 @@ extension AppTheme {
 //        return UIColor(rgb: 0xeeeeee)
 //    }
 //}
-
-class Label: UILabel {
-    override func draw(_ rect: CGRect) {
-        super.draw(rect)
-
-    }
-    override func layoutSubviews() {
-        textColor = AppTheme.current.textfieldPlaceHolder
-    }
-}
